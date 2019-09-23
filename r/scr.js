@@ -8,7 +8,7 @@ let D=b*b-4*a*c;
 if(D<0) console.log("Нет решения");
 else{
      if(D==0) console.log("1 решение " + (-b/(2*a)));
-     else console.log("2 решения " + ((-b-D**(0.5))/2*a) + " и " + ((-b+D**(0.5))/2*a));
+     else console.log("2 решения " + ((-b-D**(0.5))/(2*a)) + " и " + ((-b+D**(0.5))/(2*a)));
 }
 let numb=Number(prompt("Задание 1.2\nnumber=", ' '));
 let isSimple=true;
