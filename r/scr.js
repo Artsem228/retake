@@ -1,5 +1,7 @@
 "use strict";
 
+//Тема 1
+//Задание 1.1
 let a,b,c;
 a=Number(prompt("Задание 1.1\na=", ' '));
 b=Number(prompt("Задание 1.1\nb=", ' '));
@@ -10,19 +12,22 @@ else{
      if(D==0) console.log("1 решение " + (-b/(2*a)));
      else console.log("2 решения " + ((-b-D**(0.5))/(2*a)) + " и " + ((-b+D**(0.5))/(2*a)));
 }
+//Задание 1.2
 let numb=Number(prompt("Задание 1.2\nnumber=", ' '));
 let isSimple=true;
 for(let i=2;i<numb/2;i++){
     if((numb%i)===0) isSimple=false;
 }
-if(numb===1)  console.log(false);
+if(numb<=1||numb!==Math.round(numb))  console.log(false);
 else console.log(isSimple);
+//Задание 1.3
 let n=Number(prompt("Задание 1.3\nn=", ' '));
 let sum=0;
 for(let i=1;i<=n;i++){
     sum+=1/i;
 }
 console.log(sum);
+//Задание 1.4
 numb=Number(prompt("Задание 1.4\nnumber=", ' '));
 let rev=0;
 while(numb!==0){
@@ -33,6 +38,8 @@ while(numb!==0){
 }
 console.log(rev);
 
+//Тема 2
+//Задание 2.1
 function arr1(A){
     let B=[];
     let C=[];
@@ -43,6 +50,7 @@ function arr1(A){
     console.log(B);
     console.log(C);
 }
+//Задание 2.2
 function arr2(arr){
     let key=[];
     let amount=[];
@@ -67,6 +75,7 @@ function arr2(arr){
     }
     console.log(str);
 }
+//Задание 2.3
 function anagramma(str1, str2){
     let isAnagramma=true;
     if(str1.length!=str2.length) isAnagramma=false;
@@ -78,6 +87,7 @@ function anagramma(str1, str2){
     console.log(isAnagramma);
 }
 
+//Тема 3
 function Machine(power) {
     this._power = power;
     this._enabled = false;
